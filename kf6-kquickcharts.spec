@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kquickcharts
 
 Summary:	Plugin for beautiful and interactive charts
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	35debb1868a07428735afc1f28d62f8d
+# Source0-md5:	8c48ee93f942b1531a0f4c0e73e1d62c
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -76,9 +76,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/qt6/qml/org/kde/quickcharts/controls
 %{_datadir}/qlogging-categories6/kquickcharts.categories
 %ghost %{_libdir}/libQuickCharts.so.1
-%attr(755,root,root) %{_libdir}/libQuickCharts.so.*.*
+%{_libdir}/libQuickCharts.so.*.*
 %ghost %{_libdir}/libQuickChartsControls.so.1
-%attr(755,root,root) %{_libdir}/libQuickChartsControls.so.*.*
+%{_libdir}/libQuickChartsControls.so.*.*
 %{_libdir}/qt6/qml/org/kde/quickcharts/QuickCharts.qmltypes
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/KirigamiTheme.qml
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/Legend.qml
@@ -88,10 +88,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/QuickChartsControls.qmltypes
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/Theme.qml
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/kde-qmlmodule.version
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/quickcharts/controls/libQuickChartsControlsplugin.so
+%{_libdir}/qt6/qml/org/kde/quickcharts/controls/libQuickChartsControlsplugin.so
 %{_libdir}/qt6/qml/org/kde/quickcharts/controls/qmldir
 %{_libdir}/qt6/qml/org/kde/quickcharts/kde-qmlmodule.version
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/quickcharts/libQuickChartsplugin.so
+%{_libdir}/qt6/qml/org/kde/quickcharts/libQuickChartsplugin.so
 %{_libdir}/qt6/qml/org/kde/quickcharts/qmldir
 
 

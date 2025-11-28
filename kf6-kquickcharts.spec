@@ -2,13 +2,13 @@
 # Conditional build:
 %bcond_with	tests		# build with tests
 %define		kdeframever	6.20
-%define		qtver		5.15.2
+%define		qtver		6.8.0
 %define		kfname		kquickcharts
 
 Summary:	Plugin for beautiful and interactive charts
 Name:		kf6-%{kfname}
 Version:	6.20.0
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz

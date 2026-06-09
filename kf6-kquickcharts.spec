@@ -33,6 +33,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Qt Quick plugin for beautiful and interactive charts.
 
+%description -l pl.UTF-8
+Wtyczka Qt Quick do pięknych i interaktywnych wykresów.
+
 %package devel
 Summary:	Header files for %{kaname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kaname}
